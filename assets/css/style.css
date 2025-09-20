@@ -1,69 +1,171 @@
-body {
-  font-family: Arial, sans-serif;
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@600&display=swap');
+
+/* Base Reset */
+* {
   margin: 0;
-  background: #f9f9f9;
-  color: #333;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  color: #1c3d29; /* deep green */
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+a {
+  text-decoration: none;
+  color: #06a84d;
+}
+
+a:hover {
+  color: #048c3f;
+}
+
+/* Header & Navigation */
 header {
-  background: #064420;
+  background: #1c3d29;
   color: white;
-  padding: 1rem;
-  text-align: center;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  color: #f5f5f5;
 }
 
 nav a {
-  color: white;
-  margin: 0 1rem;
-  text-decoration: none;
+  margin-left: 1.5rem;
+  color: #f5f5f5;
+  font-weight: 500;
 }
 
-.container {
-  padding: 2rem;
+nav a:hover {
+  color: #e2c044; /* golden highlight */
+}
+
+/* Hero Section */
+.hero {
+  background: url('../images/hero-dropper.jpg') center/cover no-repeat;
+  color: white;
+  padding: 8rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+.hero p {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+}
+
+.btn-primary {
+  background: #06a84d;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #048c3f;
+}
+
+/* Section Styles */
+section {
+  padding: 4rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.grid-2 {
   display: grid;
   gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
+/* Testimonials */
+.testimonial {
+  background: #f4f4f4;
+  padding: 2rem;
+  border-radius: 8px;
+  font-style: italic;
+  border-left: 4px solid #06a84d;
+  color: #333;
 }
 
-.card {
-  background: white;
-  padding: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.center-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  text-align: center;
-}
-
-.btn {
-  margin: 0.5rem;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  background: #064420;
-  color: white;
-  font-size: 1rem;
-  cursor: pointer;
+/* FAQ */
+.faq {
+  background: #fafafa;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid #06a84d;
+  margin-bottom: 1rem;
   border-radius: 5px;
 }
 
-.btn:hover {
-  background: #09793f;
+.faq strong {
+  color: #1c3d29;
 }
 
+/* Footer */
 footer {
-  background: #064420;
+  background: #1c3d29;
   color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem 2rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #e2c044;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  nav {
+    font-size: 0.9rem;
+  }
 }
