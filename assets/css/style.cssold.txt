@@ -1,7 +1,12 @@
 /* ===========================
-   GOOGLE FONTS
+   CUSTOM FONT
 =========================== */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:wght@400;500;700&display=swap');
+@font-face {
+  font-family: 'KnightsQuest';
+  src: url('../fonts/KnightsQuest.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* ===========================
    GLOBAL RESET & BASE
@@ -24,7 +29,7 @@ body {
    TYPOGRAPHY
 =========================== */
 h1, h2, h3, .hero h1, .story-quote {
-  font-family: 'Cinzel Decorative', serif;
+  font-family: 'KnightsQuest', 'Old English Text MT', 'Cinzel Decorative', serif;
   color: #e2c044;
   letter-spacing: 1px;
 }
@@ -60,7 +65,6 @@ header {
 header h1 {
   font-size: 1.8rem;
   color: #e2c044;
-  font-family: 'Cinzel Decorative', serif;
 }
 
 nav a {
@@ -214,7 +218,6 @@ section .faq {
 
 .story-quote {
   text-align: center;
-  font-family: 'Cinzel Decorative', serif;
   font-size: 1.8rem;
   font-weight: bold;
   color: #06a84d;
@@ -237,7 +240,6 @@ section .faq {
   text-align: center;
   color: #e2c044;
   margin-bottom: 1rem;
-  font-family: 'Cinzel Decorative', serif;
 }
 
 .order-form p {
@@ -304,7 +306,6 @@ button.btn-primary {
 }
 
 .confirmation h2 {
-  font-family: 'Cinzel Decorative', serif;
   font-size: 2.5rem;
   margin-bottom: 1rem;
   color: #e2c044;
@@ -335,6 +336,7 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
 /* ===========================
    RESPONSIVE
 =========================== */
@@ -350,55 +352,4 @@ footer a:hover {
   .form-grid {
     grid-template-columns: 1fr;
   }
-/* ===========================
-   LEGAL PAGES
-=========================== */
-.legal-section {
-  background: #111;
-  padding: 4rem 2rem;
-}
-
-.legal-container {
-  max-width: 900px;
-  margin: auto;
-  background: #1c1c1c;
-  padding: 3rem;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
-}
-
-.legal-container h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #e2c044;
-  margin-bottom: 1rem;
-}
-
-.legal-container .effective {
-  text-align: center;
-  color: #aaa;
-  margin-bottom: 2rem;
-}
-
-.legal-container h3 {
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
-  font-size: 1.5rem;
-  color: #06a84d;
-  border-bottom: 1px solid #333;
-  padding-bottom: 0.3rem;
-}
-
-.legal-container p,
-.legal-container li {
-  color: #ddd;
-  margin-bottom: 1rem;
-  line-height: 1.7;
-}
-
-.legal-container ul {
-  margin-left: 1.5rem;
-  list-style-type: disc;
-}
-
 }

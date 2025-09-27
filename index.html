@@ -2,16 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Green Dragon Bottling</title>
+  <title>Green Dragon Bottling Service - Age Verification</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    /* Fullscreen responsive video */
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Scales video, cropping if necessary */
+      z-index: -1;
+    }
+
+    /* Overlay content */
+    .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 90%;
+    }
+
+    .overlay h1 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    .overlay .btn {
+      margin: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      background: #06a84d;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .overlay .btn:hover {
+      background: #048c3f;
+    }
+  </style>
 </head>
 <body>
-  <div class="center-box">
-    <h1>Welcome to The Green Dragon Bottling</h1>
+  <!-- Background video -->
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="assets/video/background.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <!-- Age gate overlay -->
+  <div class="overlay">
+    <h1>Welcome to The Green Dragon Bottling Service</h1>
     <p>Are you 21 years of age or older?</p>
     <button id="yes-btn" class="btn">Yes</button>
     <button id="no-btn" class="btn">No</button>
   </div>
+
   <script src="assets/js/age-gate.js"></script>
 </body>
 </html>

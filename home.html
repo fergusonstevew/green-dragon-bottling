@@ -2,38 +2,185 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Home - Green Dragon Bottling</title>
+  <title>The Green Dragon Bottling Service</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .hero {
+      background: url('assets/images/hero-dropper.jpg') center/cover no-repeat;
+      color: white;
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+    .btn-primary {
+      background: #06a84d;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn-primary:hover {
+      background: #048c3f;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .grid-2 {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .testimonial {
+      background: #f4f4f4;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .faq {
+      background: #f9f9f9;
+      padding: 1rem;
+      border-left: 3px solid #06a84d;
+      margin-bottom: 1rem;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>The Green Dragon Bottling</h1>
-    <nav>
-      <a href="home.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="login.html">Login</a>
-    </nav>
-  </header>
+  <h1>The Green Dragon</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="order.html">Order</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-  <main class="container">
-    <section>
+
+
+ <!-- HERO -->
+
+  <section class="hero">
+    <h1>Your Perfect Cannabis Extract, Handcrafted From Your Chosen Flower</h1>
+    <p>Finally, get the exact flavors and consistent effects you've been searching for. No more guessing games or settling for mass-produced products.</p>
+    <a href="order.html" class="btn-primary">Order My Dragon</a>
+  </section>
+
+  <!-- OUR STORY -->
+  <section class="our-story">
+    <div class="story-overlay">
       <h2>Our Story</h2>
-      <p>We provide custom cannabis extraction and bottling services...</p>
-    </section>
+      <p>
+        Fine wine has been celebrated for thousands of years, carrying with it a rich history of craftsmanship and tradition. 
+        Its aging process reveals layers of flavor over time, drawing out subtle nuances shaped by the environment and the grapes from which it was born.
+      </p>
+      <p>
+        Green Dragon’s story, however, is less straightforward—shaped by the shadows of prohibition and the snake oil era of the early 1900s. 
+        My journey began with simple recipes: soaking flowers in spirits before the turn of the century. 
+        Over decades, I studied and refined techniques—experimenting with RSO, purification, and the fundamentals of organic chemistry—all in pursuit of recreating that timeless feeling of friends gathered, passing a joint in easy conversation.
+      </p>
+      <p>
+        This handcrafted Dragon captures the essence of cannabis in a suspension of pure bliss. 
+        Beginning with your chosen ounce, we carefully pasteurize and decarboxylate, then blend it with high-proof spirits before guiding it through an extended, meticulous process that draws out the plant’s most potent natural compounds. 
+        After more than 30 years of refinement, I am proud of the distinctive flavor profiles and physical effects preserved in every bottle. 
+        Like a fine wine, this creation grows more complex with age—and it shines brightest when shared among friends.
+      </p>
+      <p>
+        And, true to its name, the Dragon prefers a cool, dark palace. 
+        Let it rest for four days after bottling; that’s when the real magic begins.
+      </p>
+      <blockquote class="story-quote">LET IT REST.</blockquote>
+    </div>
+  </section>
 
-    <section>
-      <h2>Featured Bottles</h2>
-      <div class="grid">
-        <div class="card">Bottle 1</div>
-        <div class="card">Bottle 2</div>
-        <div class="card">Bottle 3</div>
+  <!-- WHY CUSTOM -->
+  <section>
+    <h2>Why Settle for Generic When Your Taste is Anything But?</h2>
+    <div class="grid-2">
+      <div>
+        <p>You bring your finest cannabis and your favorite spirits. You get a one-of-a-kind tincture that captures the true essence of what you love most.</p>
+        <p>Every sip delivers the same reliable experience, whether you're unwinding after a long day or creating an unforgettable evening with friends.</p>
       </div>
-    </section>
-  </main>
+      <img src="assets/images/custom-vs-generic.jpg" alt="Custom vs Generic" style="width:100%; border-radius:8px;">
+    </div>
+  </section>
+
+  <!-- ARTISAN PROMISE -->
+  <section>
+    <h2>Meet Your Personal Extract Artisan</h2>
+    <p>The Green Dragon Bottling Service transforms your premium flower into liquid perfection using a time-tested extraction method. Unlike mass-produced tinctures, every bottle is handcrafted specifically for you.</p>
+    <p>I work directly with you to understand exactly what you want – whether that's the mellow relaxation of your favorite indica or the bright energy of a special sativa.</p>
+    <img src="assets/images/artisan-work.jpg" alt="Craftsman at work" style="width:100%; border-radius:8px; margin-top:1rem;">
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="grid-2">
+    <div>
+      <h3>Flavor That Actually Reflects Your Strain</h3>
+      <p>My proprietary extraction process captures the complex terpene profiles that make each strain special. You'll taste the difference in every drop.</p>
+    </div>
+    <div>
+      <h3>Consistency You Can Count On</h3>
+      <p>No more wondering "will this work tonight?" Every bottle delivers the exact same reliable effects, dose after dose.</p>
+    </div>
+    <div>
+      <h3>A Truly Unique Product</h3>
+      <p>Since you provide your own flower and spirits, no two bottles are identical. This is your personal blend, crafted your way.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="text-align:center;">
+    <h2>Ready for Your Perfect Extract?</h2>
+    <p>Stop settling for generic products that don't match your sophisticated taste.</p>
+    <a href="order.html" class="btn-primary">Order My Dragon</a>
+  </section>
+  <!-- PROCESS TIMELINE -->
+  <section class="process">
+    <h2>How It Works</h2>
+    <div class="timeline">
+      <div class="step">
+        <div class="circle"><i class="fas fa-comments"></i></div>
+        <h3>Selection</h3>
+        <p>We begin with your flower personally selected by you for your taste, and your goals. Together, we’ll choose the best alcohol base and flavor direction.</p>
+      </div>
+
+      <div class="step">
+        <div class="circle"><i class="fas fa-flask"></i></div>
+        <h3>Extraction</h3>
+        <p>Your chosen flower and spirit are transformed using my time-tested extraction process. Every nuance of flavor and effect is preserved with artisanal precision.</p>
+      </div>
+
+      <div class="step">
+        <div class="circle"><i class="fas fa-box-open"></i></div>
+        <h3>Delivery</h3>
+        <p>Within 2–3 weeks, but currently wait time is around 72 hours, you’ll receive your handcrafted tincture in a premium glass bottle — ready to enjoy, consistent every single time.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FAQ -->
+  <section>
+    <h2>Your Questions Answered</h2>
+    <div class="faq"><strong>Q:</strong> What do I need to provide?<br><strong>A:</strong> Just bring your ounce of cannabis and your preferred alcohol (we’ll provide a resonable recommendation). I handle everything else.</div>
+    <div class="faq"><strong>Q:</strong> How long does the process take?<br><strong>A:</strong> From consultation to finished product is typically 2–3 weeks. This allows proper extraction time to capture all the flavors and effects you want.</div>
+    <div class="faq"><strong>Q:</strong> What if I’m not satisfied with the result?<br><strong>A:</strong> We work together during consultation to ensure we’re creating exactly what you want. I stand behind the consistency and quality of every bottle I create.</div>
+  </section>
 
   <footer>
-    <p>© 2025 Green Dragon Bottling | <a href="terms.html">Terms</a> | <a href="privacy.html">Privacy</a></p>
+    <p>© 2025 The Green Dragon Bottling | <a href="terms.html">Terms</a> | <a href="privacy.html">Privacy</a></p>
   </footer>
 </body>
 </html>

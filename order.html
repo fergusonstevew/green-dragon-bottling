@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order My Dragon</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>The Green Dragon Bottling</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="order-form">
+    <h2>Order My Dragon</h2>
+    <p>Fill out the form below to request your custom handcrafted tincture.</p>
+
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="form-grid">
+      <label>
+        First Name:
+        <input type="text" name="first_name" required>
+      </label>
+      <label>
+        Last Name:
+        <input type="text" name="last_name" required>
+      </label>
+      <label>
+        Address:
+        <input type="text" name="address" required>
+      </label>
+      <label>
+        Phone:
+        <input type="tel" name="phone" required>
+      </label>
+      <label>
+        Email:
+        <input type="email" name="email" required>
+      </label>
+      <label class="full-width">
+        Comments:
+        <textarea name="comments" rows="5"></textarea>
+      </label>
+
+      <button type="submit" class="btn-primary">Submit Order</button>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+  <!-- form fields here -->
+  <input type="hidden" name="_redirect" value="https://yourdomain.com/confirmation.html">
+</form>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 The Green Dragon Bottling. All rights reserved.</p>
+  </footer>
+</body>
+</html>
