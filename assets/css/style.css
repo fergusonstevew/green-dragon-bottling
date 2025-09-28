@@ -400,5 +400,44 @@ footer a:hover {
   margin-left: 1.5rem;
   list-style-type: disc;
 }
+/* Feature Sections */
+.feature {
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.feature img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.image-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Our Story (About page) */
+.our-story {
+  background: url('../images/story-bg.jpg') center/cover no-repeat;
+  padding: 6rem 2rem;
+  color: #f5f5f5;
+}
+
+.story-overlay {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 3rem;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.story-overlay h2 {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 2.2rem;
+  color: #e2c044;
+  margin-bottom: 1.5rem;
+}
 
 }
