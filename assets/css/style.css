@@ -154,6 +154,13 @@ section h2 {
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+.grid-2 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
 
 /* ===========================
    FAQ
@@ -219,6 +226,35 @@ section .faq {
   font-weight: bold;
   color: #06a84d;
   margin-top: 2rem;
+}
+/* ===========================
+   ORDERING OPTIONS
+=========================== */
+.ordering-options {
+  background: #1a1a1a;
+  padding: 3rem 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.6);
+  text-align: center;
+}
+
+.ordering-options h2 {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 2rem;
+  color: #e2c044;
+  margin-bottom: 1rem;
+}
+
+.ordering-options p {
+  color: #ddd;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.ordering-options strong {
+  color: #06a84d;
 }
 
 /* ===========================

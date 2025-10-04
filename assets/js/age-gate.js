@@ -4,7 +4,7 @@ document.getElementById('yes-btn').addEventListener('click', () => {
 });
 
 document.getElementById('no-btn').addEventListener('click', () => {
-  window.location.href = "https://www.samhsa.gov/";
+  window.location.href = "https://thekoolaid.org/index.html";
 });
 
 window.onload = () => {
