@@ -71,7 +71,7 @@ nav a {
   font-size: 1.1rem;
 }
 
-nav a:hover {
+nav a:hover, nav a.active {
   color: #06a84d;
 }
 
@@ -79,11 +79,11 @@ nav a:hover {
    HERO SECTION
 =========================== */
 .hero {
-  background: url('../images/hero-dropper.jpg') center/cover no-repeat;
+  position: relative;
   color: white;
   padding: 8rem 2rem;
   text-align: center;
-  position: relative;
+  background: url('../images/hero-dropper.jpg') center/cover no-repeat;
 }
 
 .hero::after {
@@ -95,7 +95,7 @@ nav a:hover {
   z-index: 0;
 }
 
-.hero h1, .hero p, .hero .btn-primary {
+.hero h1, .hero p {
   position: relative;
   z-index: 1;
 }
@@ -148,30 +148,19 @@ section h2 {
   color: #e2c044;
 }
 
-/* Grid Layouts */
-.grid-2 {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-.grid-2 img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
-}
-
-
 /* ===========================
    FAQ
 =========================== */
-section .faq {
-  background-color: #2a2a2a !important; /* force gray */
+.faq {
+  background: #1c1c1c;
   padding: 1rem 1.5rem;
   border-left: 4px solid #e2c044;
   margin-bottom: 1rem;
   border-radius: 5px;
-  color: #ddd;
+}
+
+.faq strong {
+  color: #06a84d;
 }
 
 /* ===========================
@@ -195,10 +184,6 @@ section .faq {
   justify-content: center;
   border-radius: 50%;
   box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-}
-
-.circle i {
-  font-size: 1.5rem;
 }
 
 /* ===========================
@@ -227,6 +212,37 @@ section .faq {
   color: #06a84d;
   margin-top: 2rem;
 }
+
+/* ===========================
+   ORDER INFO SECTION
+=========================== */
+.order-info {
+  background: #111;
+  color: #ddd;
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  line-height: 1.8;
+}
+
+.order-info h2, .order-info h3 {
+  color: #e2c044;
+  font-family: 'Cinzel Decorative', serif;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.order-info a {
+  color: #06a84d;
+  text-decoration: underline;
+}
+
+.order-info a:hover {
+  color: #e2c044;
+}
+
 /* ===========================
    ORDERING OPTIONS
 =========================== */
@@ -371,6 +387,61 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+/* ===========================
+   HOME PAGE IMAGE FIX
+=========================== */
+.home-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background: #000;
+  padding: 2rem;
+}
+
+.home-images img {
+  width: 45%;
+  max-width: 500px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-images img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+  .home-images img {
+    width: 90%;
+    height: 250px;
+  }
+}
+/* Fix custom-bottle image scaling on home page */
+.home-image img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* Optional: if it’s part of a grid section */
+.image-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  padding: 2rem;
+}
+
+
 /* ===========================
    RESPONSIVE
 =========================== */
@@ -386,94 +457,4 @@ footer a:hover {
   .form-grid {
     grid-template-columns: 1fr;
   }
-/* ===========================
-   LEGAL PAGES
-=========================== */
-.legal-section {
-  background: #111;
-  padding: 4rem 2rem;
-}
-
-.legal-container {
-  max-width: 900px;
-  margin: auto;
-  background: #1c1c1c;
-  padding: 3rem;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
-}
-
-.legal-container h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #e2c044;
-  margin-bottom: 1rem;
-}
-
-.legal-container .effective {
-  text-align: center;
-  color: #aaa;
-  margin-bottom: 2rem;
-}
-
-.legal-container h3 {
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
-  font-size: 1.5rem;
-  color: #06a84d;
-  border-bottom: 1px solid #333;
-  padding-bottom: 0.3rem;
-}
-
-.legal-container p,
-.legal-container li {
-  color: #ddd;
-  margin-bottom: 1rem;
-  line-height: 1.7;
-}
-
-.legal-container ul {
-  margin-left: 1.5rem;
-  list-style-type: disc;
-}
-/* Feature Sections */
-.feature {
-  align-items: center;
-  margin-bottom: 3rem;
-}
-
-.feature img {
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.5);
-}
-
-.image-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Our Story (About page) */
-.our-story {
-  background: url('../images/story-bg.jpg') center/cover no-repeat;
-  padding: 6rem 2rem;
-  color: #f5f5f5;
-}
-
-.story-overlay {
-  background: rgba(0, 0, 0, 0.75);
-  padding: 3rem;
-  border-radius: 10px;
-  max-width: 900px;
-  margin: auto;
-}
-
-.story-overlay h2 {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: 2.2rem;
-  color: #e2c044;
-  margin-bottom: 1.5rem;
-}
-
 }

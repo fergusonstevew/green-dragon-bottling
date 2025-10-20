@@ -1,143 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Order — The Green Dragon Bottling</title>
-
-  <!-- Make sure this path matches where your stylesheet actually lives.
-       If style.css is at project_root/assets/css/style.css then this is correct. -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order | The Green Dragon Bottling Service</title>
   <link rel="stylesheet" href="assets/css/style.css" />
-
-  <!-- QUICK TEST: small inline rule to confirm head is loaded.
-       If you see the gold heading color on page load, the stylesheet link is working.
-       If NOT, the file path is wrong or blocked. Remove this block after testing. -->
-  <style id="inline-test">
-    /* temporary: visual confirmation only */
-    .order-intro h1 { color: #e2c044 !important; }
-  </style>
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
 </head>
 <body>
 
-  <!-- HEADER -->
+  <!-- ===========================
+       HEADER
+  ============================ -->
   <header>
-    <h1>The Green Dragon</h1>
+    <h1>The Green Dragon Bottling Service</h1>
     <nav>
       <a href="home.html">Home</a>
       <a href="about.html">About</a>
-      <a href="strains.html">Strains</a>
       <a href="order.html" class="active">Order</a>
       <a href="contact.html">Contact</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="terms.html">Terms</a>
     </nav>
   </header>
 
-  <!-- ORDER INTRO -->
-  <section class="order-intro">
-    <div class="overlay">
-      <h1>Craft Your Perfect Elixir</h1>
-      <p>
-        Every bottle begins with your vision — your favorite flower, your chosen spirit, and our time-honored process.
-        Together, we’ll create a tincture that captures your personal essence and delivers a refined, consistent experience.
-        Begin your journey below and let The Green Dragon bring your creation to life.
-      </p>
-    </div>
+  <!-- ===========================
+       HERO SECTION
+  ============================ -->
+  <section class="hero" style="background: url('assets/images/artisan-crafting.jpg') center/cover no-repeat;">
+    <div class="overlay"></div>
+    <h1>Craft Your Perfect Bottle</h1>
+    <p>Follow the simple steps below to begin your handcrafted tincture order.</p>
   </section>
 
-  <!-- STRAIN SELECTION -->
-  <section class="strain-selection">
+  <!-- ===========================
+       STRAIN SELECTION INFO
+  ============================ -->
+  <section class="order-info">
     <h2>Select Your Strain</h2>
-
     <p>
-      I usually start by using <a href="https://weedmaps.com" target="_blank" rel="noopener">Weedmaps</a>
-      to find a local dispensary or delivery service with available strains.
+      I usually start by using <a href="https://weedmaps.com" target="_blank">Weedmaps</a> to find a local dispensary or delivery service with available strains.
     </p>
-
     <p>
-      To learn more about each strain’s effects, I recommend visiting
-      <a href="https://www.leafly.com" target="_blank" rel="noopener">Leafly</a>.
-      Just enter any strain name there, and you’ll get a helpful summary of its characteristics and effects.
+      To learn more about each strain’s effects, I recommend visiting <a href="https://leafly.com" target="_blank">Leafly</a>. Just enter any strain name there, and you’ll get a helpful summary of its characteristics and effects.
     </p>
-
     <p>
-      Personally, I prefer Sativa or purple strains—something uplifting. Some of my favorites include
-      <em>Green Crack</em>, <em>Blue Dream</em>, <em>Gush Mints</em>, <em>Government Oasis</em>,
-      <em>Jungle Juice</em>, and <em>Do Over</em>.
+      Personally, I prefer Sativa or purple strains—something uplifting. Some of my favorites include <em>Green Crack, Blue Dream, Gush Mints, Government Oasis, Jungle Juice,</em> and <em>Do Over</em>.
     </p>
 
     <h3>Preparing Your Supplies</h3>
-    <p>Once you’ve selected your strain and have your ounce (28 grams) ready, you’ll also need 1.5 liters of vodka.</p>
-    <p>Clean neutral vodkas work best; these days I use <strong>Vitalia</strong>.</p>
+    <p>
+      Once you’ve selected your strain and have your ounce (28 grams) ready, you’ll also need 1.75 liters of vodka.
+      I’ve tried brands like Grey Goose and SKYY, but I’ve found that a clean, neutral vodka works best.
+      These days, I use Vitali for its smooth and pure flavor. I generally avoid Russian vodkas, as some can have a harsh, fuel-like aftertaste.
+    </p>
 
     <h3>Order & Processing</h3>
-    <p>Please contact me when you have supplies ready. Most orders complete within 2 days; larger orders may require a deposit.</p>
-    <p>Completed bottles must be retrieved within one month. Payments are <strong>cash only</strong>.</p>
+    <p>
+      Once you have your vodka and cannabis ready, please contact me.
+      Most orders are filled within 2 days, though processing can take longer—especially around holidays.
+      I’ll provide an estimated completion time when I pick up your supplies.
+    </p>
+    <p>
+      Large orders may require an additional deposit. Completed bottles must be retrieved within one month of ordering, or they may be forfeited.
+      Payments are cash only—no exceptions (as you’d expect for cannabis-related transactions).
+    </p>
+    <p>
+      Each finished bottle will be clearly labeled with your strain and will contain only the alcohol and marijuana you provided.
+      If you have any questions or concerns, don’t hesitate to reach out. Most transactions are quick, smooth, and straightforward.
+    </p>
   </section>
 
-  <!-- ORDERING OPTIONS -->
+  <!-- ===========================
+       ORDERING OPTIONS
+  ============================ -->
   <section class="ordering-options">
     <h2>Bring Your Dragon to Life</h2>
     <p><strong>Bottling Service ($125):</strong> We'll work our magic to transform your bud and alcohol into pure, bottled dragon.</p>
     <p><strong>Bottle Etching ($50):</strong> Commemorate your creation with a custom dragon etched right onto your bottle.</p>
-    <p><strong>Looking for something else?</strong> Tell us what you have in mind — we aim to please.</p>
+    <p><strong>Looking for something else?</strong> We aim to please! Tell us what you have in mind, and we'll do our best to make it happen.</p>
   </section>
 
-  <!-- ORDER FORM -->
+  <!-- ===========================
+       ORDER FORM
+  ============================ -->
   <section class="order-form">
-    <h2>Start Your Order</h2>
-    <p>Fill in the details below to begin crafting your personal Green Dragon tincture.</p>
+    <h2>Place Your Order</h2>
+    <p>Fill out the form below and we’ll reach out to confirm details.</p>
 
-    <!-- If you want email delivery without a backend, change the action to Formspree endpoint -->
-    <!-- e.g. action="https://formspree.io/f/yourFormID" method="POST" -->
-    <form action="confirmation.html" method="POST" class="form-grid" id="orderForm">
-      <label>
-        First Name:
-        <input type="text" name="firstName" required>
-      </label>
+    <form action="https://formsubmit.co/thegreendragon.bottling.service@gmail.com" method="POST">
+      <div class="form-grid">
+        <label>
+          First Name
+          <input type="text" name="first_name" required />
+        </label>
 
-      <label>
-        Last Name:
-        <input type="text" name="lastName" required>
-      </label>
+        <label>
+          Last Name
+          <input type="text" name="last_name" required />
+        </label>
 
-      <label>
-        Address:
-        <input type="text" name="address" required>
-      </label>
+        <label class="full-width">
+          Address
+          <input type="text" name="address" required />
+        </label>
 
-      <label>
-        Phone:
-        <input type="tel" name="phone" required>
-      </label>
+        <label>
+          Phone
+          <input type="tel" name="phone" required />
+        </label>
 
-      <label>
-        Email:
-        <input type="email" name="email" required>
-      </label>
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
 
-      <label class="full-width">
-        Comments:
-        <textarea name="comments" rows="4" placeholder="Tell us about your desired blend or special requests..."></textarea>
-      </label>
+        <label class="full-width">
+          Comments
+          <textarea name="comments" rows="5" placeholder="Tell us what you have in mind..."></textarea>
+        </label>
 
-      <button type="submit" class="btn-primary">Submit Order</button>
+        <input type="hidden" name="_next" value="confirmation.html">
+        <input type="hidden" name="_captcha" value="false">
+
+        <button type="submit" class="btn-primary">Submit Order</button>
+      </div>
     </form>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ===========================
+       FOOTER
+  ============================ -->
   <footer>
-    <p>&copy; 2025 The Green Dragon Bottling Service</p>
-    <p><a href="privacy.html">Privacy</a> | <a href="terms.html">Terms</a></p>
+    <p>&copy; 2025 The Green Dragon Bottling Service | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
   </footer>
 
-  <!-- Optional: small script to remove inline test after load -->
-  <script>
-    // remove test style once page has loaded and you see styling is working
-    window.addEventListener('load', function() {
-      var el = document.getElementById('inline-test');
-      if (el) el.parentNode.removeChild(el);
-    });
-  </script>
 </body>
 </html>
